@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hw">
+
+    <!--minsdkVersion要求手机安卓系统的最小版本号，targetSdkVersion最佳版本号-->
+<!--    <user-sdk-->
+<!--        android:minsdkVersion="8"-->
+<!--        android:targetSdkVersion="18" />-->
+
+    <!--icon应用图标，label应用名称，theme应用主题-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+            activity标签：配置Activity类
+            name属性：全类名，可以省略包名部分
+            label属性：界面标题
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
