@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:text="this is text"
+        android:textColor="#ff0000"
+        android:textSize="20sp"></TextView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="this is hint"
+        android:inputType="textPassword"></EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is button"></Button>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/alert_dark_frame"
+        android:src="@android:drawable/ic_media_play"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hobby"></TextView>
+        <CheckBox
+            android:id="@+id/football"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="football">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/basketball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="basketball">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/pingpong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pingpong">
+        </CheckBox>
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="confirm"></Button>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/sexRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="man"></RadioButton>
+        <RadioButton
+            android:id="@+id/woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="woman"></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/contextMenuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ContextMenuButton"></Button>
+
+    <LinearLayout
+        android:id="@+id/progressBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+       <ProgressBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"></ProgressBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="loading..."></TextView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="30"></ProgressBar>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></SeekBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/normalAlertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="normalAlertDialog"
+            android:text="NormalAlertDialog"></Button>
+        <Button
+            android:id="@+id/selectAlertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectAlertDialog"
+            android:text="SelectAlertDialog"></Button>
+        <Button
+            android:id="@+id/customizeAlertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="customizeAlertDialog"
+            android:text="CustomizeAlertDialog"></Button>
+
+<!--        <Button-->
+<!--            android:id="@+id/progressAlertDialog1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="progressAlertDialog1"-->
+<!--            android:text="ProgressAlertDialog1"></Button>-->
+<!--        <Button-->
+<!--            android:id="@+id/progressAlertDialog2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="progressAlertDialog2"-->
+<!--            android:text="ProgressAlertDialog2"></Button>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/dataBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="dataAlertDialog"-->
+<!--            android:text="DateButton"></Button>-->
+        <Button
+            android:id="@+id/timeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="timeAlertDialog"
+            android:text="TimeButton"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
