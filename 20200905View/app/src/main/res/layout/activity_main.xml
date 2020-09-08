@@ -138,44 +138,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/normalAlertDialog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="normalAlertDialog"
-            android:text="NormalAlertDialog"></Button>
-        <Button
-            android:id="@+id/selectAlertDialog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="selectAlertDialog"
-            android:text="SelectAlertDialog"></Button>
-        <Button
-            android:id="@+id/customizeAlertDialog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="customizeAlertDialog"
-            android:text="CustomizeAlertDialog"></Button>
+<!--        <Button-->
+<!--            android:id="@+id/normalAlertDialog"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="normalAlertDialog"-->
+<!--            android:text="NormalAlertDialog"></Button>-->
+<!--        <Button-->
+<!--            android:id="@+id/selectAlertDialog"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="selectAlertDialog"-->
+<!--            android:text="SelectAlertDialog"></Button>-->
+<!--        <Button-->
+<!--            android:id="@+id/customizeAlertDialog"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="customizeAlertDialog"-->
+<!--            android:text="CustomizeAlertDialog"></Button>-->
 
-<!--        <Button-->
-<!--            android:id="@+id/progressAlertDialog1"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:onClick="progressAlertDialog1"-->
-<!--            android:text="ProgressAlertDialog1"></Button>-->
-<!--        <Button-->
-<!--            android:id="@+id/progressAlertDialog2"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:onClick="progressAlertDialog2"-->
-<!--            android:text="ProgressAlertDialog2"></Button>-->
+        <Button
+            android:id="@+id/progressAlertDialog1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="progressAlertDialog1"
+            android:text="ProgressAlertDialog1"></Button>
+        <Button
+            android:id="@+id/progressAlertDialog2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="progressAlertDialog2"
+            android:text="ProgressAlertDialog2"></Button>
 
-<!--        <Button-->
-<!--            android:id="@+id/dataBtn"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:onClick="dataAlertDialog"-->
-<!--            android:text="DateButton"></Button>-->
+        <Button
+            android:id="@+id/dataBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dataAlertDialog"
+            android:text="DateButton"></Button>
         <Button
             android:id="@+id/timeBtn"
             android:layout_width="match_parent"

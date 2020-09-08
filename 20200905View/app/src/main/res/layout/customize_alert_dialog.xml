@@ -7,7 +7,7 @@
         android:id="@+id/loginImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/login">
+        android:src="@drawable/login"><!--login自定义图片-->
     </ImageView>
     <LinearLayout
         android:orientation="horizontal"

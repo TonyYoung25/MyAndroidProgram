@@ -201,22 +201,22 @@ public class MainActivity extends AppCompatActivity {
 
 
     //optionMenu
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        menu.add(0,1,1,"yes");
-//        menu.add(0,2,2,"no");
-//
-//        return super.onCreateOptionsMenu(menu);
-//    }
-
-    //menu的菜单弹出
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.option_menu, menu);
+        menu.add(0,1,1,"yes");
+        menu.add(0,2,2,"no");
 
         return super.onCreateOptionsMenu(menu);
     }
+
+    //menu的菜单弹出
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater menuInflater = getMenuInflater();
+//        menuInflater.inflate(R.menu.option_menu, menu);
+//
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
     //选中后的效果
     @Override
@@ -294,34 +294,7 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-    //进度条弹出框
-    public void progressAlertDialog1(View v) {
-        final ProgressDialog progressDialog1 = ProgressDialog.show(MainActivity.this, "load", "loading...");
 
-        //在子线程中完成长时间的业务操作
-        new Thread() {
-            @Override
-            public void run() {
-                //模拟业务耗时
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                progressDialog1.dismiss();//弹出框消失
-
-                //不可以在分线程中直接更新UI，例如Toast，否则会抛出异常
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {//在主线程中执行Toast
-                        Toast.makeText(MainActivity.this, "load completed!", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-            }
-        }.start();
-    }
 
     //进度条弹出框
     public void progressAlertDialog2(View v) {
