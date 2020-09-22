@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".SharePreferencesActivity">-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SharePreferencesActivity">
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/spKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="key"></EditText>
+    <EditText
+        android:id="@+id/spValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="value"></EditText>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/spRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:onClick="spRead"></Button>
+    <Button
+        android:id="@+id/spWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write"
+        android:onClick="spWrite"></Button>
+</LinearLayout>

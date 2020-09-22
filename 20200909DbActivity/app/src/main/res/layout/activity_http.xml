@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/showResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="show response"></EditText>
+
+    <Button
+        android:id="@+id/httpUrlConnectionGetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="httpUrlConnectionGet"
+        android:text="httpUrlConnectionGet"></Button>
+    <Button
+        android:id="@+id/httpUrlConnectionPostBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="httpUrlConnectionPost"
+        android:text="httpUrlConnectionPost"></Button>
+
+    <Button
+        android:id="@+id/httpClientGetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="httpClientGet"
+        android:text="httpClientGet"></Button>
+    <Button
+        android:id="@+id/httpClientPostBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="httpClientPost"
+        android:text="httpClientPost"></Button>
+
+    <Button
+        android:id="@+id/volleyGetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="volleyGet"
+        android:text="volleyGet"></Button>
+    <Button
+        android:id="@+id/volleyPostBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="volleyPost"
+        android:text="volleyPost"></Button>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/createDbBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createDB"
+        android:text="CreateDB"></Button>
+
+    <Button
+        android:id="@+id/updateDbBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="updateDB"
+        android:text="UpdateDB"></Button>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="add"
+        android:text="add"></Button>
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="update"
+        android:text="update"></Button>
+
+    <Button
+        android:id="@+id/queryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="query"
+        android:text="query"></Button>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="delete"></Button>
+
+    <Button
+        android:id="@+id/transactionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="transaction"
+        android:text="transaction"></Button>
+
+</LinearLayout>

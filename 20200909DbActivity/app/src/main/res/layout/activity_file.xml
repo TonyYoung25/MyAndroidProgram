@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/fileReadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fileRead"
+        android:text="FileRead"></Button>
+    <Button
+        android:id="@+id/fileWriteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fileWrite"
+        android:text="FileWrite"></Button>
+    <ImageView
+        android:id="@+id/fileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/scFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="scFileName"></EditText>
+    <EditText
+        android:id="@+id/scFileContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="scFileContent"></EditText>
+
+    <Button
+        android:id="@+id/scFileWriteBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scFileWrite1"
+        android:text="scFileWrite1"></Button>
+    <Button
+        android:id="@+id/scFileReadBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scFileRead1"
+        android:text="scFileRead1"></Button>
+
+    <Button
+        android:id="@+id/scFileWriteBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scFileWrite2"
+        android:text="scFileWrite2"></Button>
+    <Button
+        android:id="@+id/scFileReadBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scFileRead2"
+        android:text="scFileRead2"></Button>
+</LinearLayout>
