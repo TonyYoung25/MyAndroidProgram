@@ -53,7 +53,7 @@ public class DbActivity extends AppCompatActivity {
         Toast.makeText(DbActivity.this, "updateDB", Toast.LENGTH_SHORT).show();
     }
 
-
+    //添加数据
     public void add(View v) {
         DbHelper dbHelper = new DbHelper(DbActivity.this, 2);
         SQLiteDatabase readableDatabase = dbHelper.getReadableDatabase();
@@ -67,6 +67,7 @@ public class DbActivity extends AppCompatActivity {
         Toast.makeText(DbActivity.this, "add: " + result, Toast.LENGTH_SHORT).show();
     }
 
+    //更新数据
     public void update(View v) {
         DbHelper dbHelper = new DbHelper(DbActivity.this, 2);
         SQLiteDatabase readableDatabase = dbHelper.getReadableDatabase();
@@ -78,6 +79,7 @@ public class DbActivity extends AppCompatActivity {
         Toast.makeText(DbActivity.this, "update: " + result, Toast.LENGTH_SHORT).show();
     }
 
+    //查询数据
     public void query(View v) {
         DbHelper dbHelper = new DbHelper(DbActivity.this, 2);
         SQLiteDatabase readableDatabase = dbHelper.getReadableDatabase();
@@ -93,6 +95,7 @@ public class DbActivity extends AppCompatActivity {
         readableDatabase.close();
     }
 
+    //删除数据
     public void delete(View v) {
         DbHelper dbHelper = new DbHelper(DbActivity.this, 2);
         SQLiteDatabase readableDatabase = dbHelper.getReadableDatabase();

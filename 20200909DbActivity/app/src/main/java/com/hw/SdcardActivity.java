@@ -37,7 +37,7 @@ public class SdcardActivity extends AppCompatActivity {
         scFileReadBtn2 = (Button) findViewById(R.id.scFileReadBtn2);
     }
 
-    //---------------------------存储至 storage/sdcard/Android/data/packageName/files/xxx----------------------------------
+    //---------------------------路径1：存储至 storage/sdcard/Android/data/packageName/files/xxx----------------------------------
     public void scFileWrite1(View v) throws IOException {
         //判断sd卡是否在挂载状态
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
@@ -89,7 +89,7 @@ public class SdcardActivity extends AppCompatActivity {
         }
     }
 
-    //---------------------------存储至 storage/sdcard/xxx----------------------------------
+    //---------------------------路径2：存储至 storage/sdcard/xxx----------------------------------
     public void scFileWrite2(View v) throws IOException {
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             String scFileNameStr = scFileName.getText().toString();//文件名

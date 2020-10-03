@@ -14,6 +14,12 @@
         android:layout_height="wrap_content"
         android:hint="scFileContent"></EditText>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="路径1" />
+
     <Button
         android:id="@+id/scFileWriteBtn1"
         android:layout_width="match_parent"
@@ -26,6 +32,12 @@
         android:layout_height="wrap_content"
         android:onClick="scFileRead1"
         android:text="scFileRead1"></Button>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="路径2" />
 
     <Button
         android:id="@+id/scFileWriteBtn2"
