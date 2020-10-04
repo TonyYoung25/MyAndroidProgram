@@ -1,0 +1,3 @@
+include ':remoteservice'
+include ':app'
+rootProject.name = "20202003AIDL"

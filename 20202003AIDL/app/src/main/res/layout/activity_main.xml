@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bindRemoteServiceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="bindRemoteService"
+        android:text="BindRemoteService"></Button>
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:id="@+id/transferServiceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="transferService"
+        android:text="TransferService"></Button>
+
+    <Button
+        android:id="@+id/unbindRemoteServiceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unbindRemoteService"
+        android:text="UnbindRemoteService"></Button>
+</LinearLayout>
