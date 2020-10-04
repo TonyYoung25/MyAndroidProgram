@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="register"
+        android:text="register"></Button>
+
+    <Button
+        android:id="@+id/unregisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unregister"
+        android:text="unregister"></Button>
+
+    <Button
+        android:id="@+id/abortBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="abort"
+        android:text="abort"
+        ></Button>
+</LinearLayout>
